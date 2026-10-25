@@ -1,0 +1,20 @@
+{
+  "name": "ai-agents-bun",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.87",
+    "ai": "^7.0.152",
+    "zod": "^4.6.7"
+  },
+  "scripts": {
+    "simple": "bun src/01-simple.ts",
+    "tool": "bun src/02-tool.ts",
+    "agent": "bun src/03-agent-loop.ts",
+    "typecheck": "tsc --noEmit"
+  }
+}
